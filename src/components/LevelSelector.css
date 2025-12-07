@@ -1,0 +1,59 @@
+.level-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    min-width: 150px;
+}
+
+.level-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.level-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.level-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.level-btn:hover:not(:disabled) {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+.level-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.current-level {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-primary);
+    min-width: 40px;
+    text-align: center;
+}
+
+.level-slider {
+    width: 100%;
+    accent-color: var(--accent-primary);
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.shard-selector {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    width: fit-content;
+}
+
+.shard-rows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shard-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.shard-option {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shard-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.shard-option.active {
+    border-color: var(--accent-primary);
+    background: rgba(200, 155, 60, 0.2);
+    box-shadow: 0 0 10px rgba(200, 155, 60, 0.3);
+}
+
+.shard-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+.shard-option.active img,
+.shard-option:hover img {
+    filter: grayscale(0%);
+}
