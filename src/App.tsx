@@ -158,7 +158,7 @@ function App() {
 
       <footer className="main-footer">
         <div className="container">
-          <p>&copy; 2025 LoL Stats Simulator. Isn't endorsed by Riot Games.</p>
+          <p>&copy; 2025 {t('FooterDisclaimer')}</p>
         </div>
       </footer>
     </div>
