@@ -17,7 +17,7 @@ const APP_LABELS: { [key: string]: { [key: string]: string } } = {
     'Champion': 'Champion',
     'Level': 'Level',
     'Build': 'Build',
-    'Runes': 'Runes',
+    'Stat Shards': 'Stat Shards',
     'Patch': 'Patch',
     'SelectChampionPlaceholder': 'Select a champion to view stats',
     'FooterDisclaimer': "LoL Stats Simulator. Isn't endorsed by Riot Games.",
@@ -26,7 +26,7 @@ const APP_LABELS: { [key: string]: { [key: string]: string } } = {
     'Champion': 'チャンピオン',
     'Level': 'レベル',
     'Build': 'ビルド',
-    'Runes': 'ルーン',
+    'Stat Shards': 'シャード',
     'Patch': 'パッチ',
     'SelectChampionPlaceholder': 'チャンピオンを選択してステータスを表示',
     'FooterDisclaimer': "LoL Stats Simulator. Riot Gamesの推奨ではありません。",
@@ -118,7 +118,7 @@ function App() {
           </div>
 
           <div style={{ minWidth: '150px' }}>
-            <h2 className="section-title">{t('Runes')}</h2>
+            <h2 className="section-title">{t('Stat Shards')}</h2>
             <ShardSelector selection={shards} onChange={setShards} lang={lang} />
           </div>
 
