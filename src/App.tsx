@@ -29,7 +29,7 @@ const APP_LABELS: { [key: string]: { [key: string]: string } } = {
     'Stat Shards': 'シャード',
     'Patch': 'パッチ',
     'SelectChampionPlaceholder': 'チャンピオンを選択してステータスを表示',
-    'FooterDisclaimer': "LoL Stats Simulator. Riot Gamesの推奨ではありません。",
+    'FooterDisclaimer': "LoL Stats Simulator. Riot Games公式ではありません。",
   }
 };
 
